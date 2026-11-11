@@ -1,0 +1,147 @@
+.auth-page {
+    min-height: calc(100vh - 170px);
+    padding: 55px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f7f9ff, #eaf1ff)
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 36px;
+    background: #fff;
+    border: 1px solid #e6ebf5;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px #1720330c
+}
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 26px
+}
+
+.auth-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 15px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: #edf2ff;
+    font-size: 25px
+}
+
+.auth-heading h1 {
+    font-size: 29px;
+    letter-spacing: -.8px
+}
+
+.auth-heading p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #748096
+}
+
+#signupForm {
+    display: flex;
+    flex-direction: column
+}
+
+#signupForm>label:not(.terms-option) {
+    margin: 14px 0 7px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #34415a
+}
+
+#signupForm>input {
+    width: 100%;
+    min-height: 45px;
+    padding: 11px 13px;
+    border: 1px solid #dce3ef;
+    border-radius: 8px;
+    outline: none;
+    color: #172033
+}
+
+#signupForm>input:focus {
+    border-color: #3867f4;
+    box-shadow: 0 0 0 3px #3867f41a
+}
+
+.field-hint {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #8490a5
+}
+
+.terms-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 20px 0;
+    font-size: 12px;
+    color: #687389;
+    line-height: 1.6
+}
+
+.terms-option input {
+    margin-top: 4px
+}
+
+.auth-submit {
+    width: 100%;
+    border: 0;
+    cursor: pointer
+}
+
+#signupFeedback {
+    margin-top: 13px;
+    text-align: center;
+    font-size: 13px;
+    color: #27865d;
+    line-height: 1.6
+}
+
+.auth-switch {
+    margin-top: 23px;
+    text-align: center;
+    font-size: 13px;
+    color: #687389
+}
+
+.auth-switch a {
+    color: #3867f4;
+    font-weight: 700
+}
+
+.auth-security {
+    margin-top: 23px;
+    padding-top: 17px;
+    border-top: 1px solid #edf0f6;
+    text-align: center;
+    font-size: 11px;
+    color: #8490a5
+}
+
+@media(max-width:500px) {
+    .auth-page {
+        padding: 35px 14px
+    }
+
+    .auth-card {
+        padding: 26px 21px
+    }
+
+    .auth-heading h1 {
+        font-size: 26px
+    }
+}
+#signupFeedback {
+    margin-top: 12px;
+    text-align: center;
+    color: #2563eb;
+    font-weight: 600;
+}

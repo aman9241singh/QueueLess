@@ -1,0 +1,426 @@
+.dashboard-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 25px 70px
+}
+
+.welcome-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(120deg, #1d4ed8, #2563eb, #3b82f6);
+    color: #fff;
+    border-radius: 20px;
+    padding: 38px 40px;
+    margin-bottom: 25px;
+    overflow: hidden
+}
+
+.welcome-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #dbeafe
+}
+
+.welcome-banner h1 {
+    font-size: 32px;
+    margin: 10px 0
+}
+
+.welcome-banner p {
+    color: #dbeafe;
+    max-width: 550px;
+    font-size: 15px
+}
+
+.dashboard-cta {
+    display: inline-block;
+    margin-top: 22px;
+    background: #fff;
+    color: #1d4ed8;
+    padding: 12px 18px;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 14px
+}
+
+.dashboard-cta:hover {
+    background: #eff6ff
+}
+
+.welcome-art {
+    display: grid;
+    place-items: center;
+    min-width: 210px
+}
+
+.clock-circle {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 2px solid #ffffff70;
+    background: #ffffff18;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    box-shadow: 0 0 0 18px #ffffff0c
+}
+
+.clock-circle span {
+    font-size: 38px;
+    font-weight: 800
+}
+
+.clock-circle strong {
+    font-size: 16px
+}
+
+.clock-circle small {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #dbeafe
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+    margin-bottom: 25px
+}
+
+.stat-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 21px
+}
+
+.stat-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: #64748b;
+    font-size: 13px
+}
+
+.stat-icon {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 19px
+}
+
+.stat-icon.blue,
+.quick-icon.blue {
+    background: #dbeafe;
+    color: #1d4ed8
+}
+
+.stat-icon.green,
+.quick-icon.green {
+    background: #dcfce7;
+    color: #15803d
+}
+
+.stat-icon.purple,
+.quick-icon.purple {
+    background: #f3e8ff;
+    color: #7e22ce
+}
+
+.stat-icon.orange,
+.quick-icon.orange {
+    background: #ffedd5;
+    color: #c2410c
+}
+
+.stat-card h2 {
+    font-size: 29px;
+    margin: 15px 0 3px
+}
+
+.stat-card>p {
+    font-size: 12px;
+    color: #94a3b8
+}
+
+.dashboard-main-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 22px;
+    margin-bottom: 22px
+}
+
+.dashboard-panel {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    padding: 24px
+}
+
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px
+}
+
+.panel-heading h2 {
+    font-size: 20px
+}
+
+.panel-heading p {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 5px
+}
+
+.panel-heading>a {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap
+}
+
+.upcoming-token {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 17px 0;
+    border-top: 1px solid #e2e8f0
+}
+
+.token-icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background: #eff6ff;
+    border-radius: 12px;
+    font-size: 21px;
+    flex-shrink: 0
+}
+
+.token-info {
+    flex: 1;
+    min-width: 0
+}
+
+.token-info h3 {
+    font-size: 15px
+}
+
+.token-info p {
+    font-size: 12px;
+    color: #64748b;
+    margin: 4px 0
+}
+
+.token-info>span {
+    font-size: 12px;
+    color: #2563eb;
+    font-weight: 600
+}
+
+.token-action {
+    font-size: 12px;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+    padding: 7px 10px;
+    border-radius: 7px
+}
+
+.quick-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 0;
+    border-top: 1px solid #e2e8f0
+}
+
+.quick-icon {
+    display: grid;
+    place-items: center;
+    width: 39px;
+    height: 39px;
+    border-radius: 10px;
+    font-size: 20px;
+    flex-shrink: 0
+}
+
+.quick-action>span:nth-child(2) {
+    flex: 1;
+    min-width: 0
+}
+
+.quick-action strong,
+.quick-action small {
+    display: block
+}
+
+.quick-action strong {
+    font-size: 13px
+}
+
+.quick-action small {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 3px
+}
+
+.quick-action>b {
+    font-size: 22px;
+    color: #94a3b8;
+    font-weight: 400
+}
+
+.quick-action:hover strong {
+    color: #2563eb
+}
+
+.activity-panel {
+    margin-bottom: 20px
+}
+
+.activity-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 15px 0;
+    border-top: 1px solid #e2e8f0
+}
+
+.activity-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0
+}
+
+.activity-dot.green {
+    background: #16a34a
+}
+
+.activity-dot.blue {
+    background: #2563eb
+}
+
+.activity-dot.purple {
+    background: #9333ea
+}
+
+.activity-row>div {
+    flex: 1
+}
+
+.activity-row h3 {
+    font-size: 14px
+}
+
+.activity-row p {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 4px
+}
+
+.activity-row time {
+    font-size: 11px;
+    color: #94a3b8;
+    white-space: nowrap
+}
+
+.dashboard-demo-note {
+    background: #eff6ff;
+    color: #1e40af;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 13px
+}
+
+@media(max-width:950px) {
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .dashboard-main-grid {
+        grid-template-columns: 1fr
+    }
+
+    .welcome-art {
+        min-width: 160px
+    }
+
+    .clock-circle {
+        width: 145px;
+        height: 145px
+    }
+}
+
+@media(max-width:600px) {
+    .dashboard-section {
+        padding: 30px 15px 50px
+    }
+
+    .welcome-banner {
+        padding: 28px 22px
+    }
+
+    .welcome-banner h1 {
+        font-size: 26px
+    }
+
+    .welcome-art {
+        display: none
+    }
+
+    .dashboard-stats {
+        gap: 12px
+    }
+
+    .stat-card {
+        padding: 16px
+    }
+
+    .stat-top {
+        align-items: flex-start
+    }
+
+    .stat-card h2 {
+        font-size: 25px
+    }
+
+    .dashboard-panel {
+        padding: 19px 15px
+    }
+
+    .upcoming-token {
+        gap: 9px
+    }
+
+    .token-icon {
+        width: 37px;
+        height: 37px;
+        font-size: 18px
+    }
+
+    .token-info p {
+        font-size: 11px
+    }
+
+    .token-action {
+        padding: 6px 8px
+    }
+
+    .activity-row {
+        gap: 10px
+    }
+}

@@ -1,0 +1,136 @@
+.services-hero {
+    padding: 75px 7% 55px;
+    text-align: center;
+    background: linear-gradient(120deg, #f8faff, #edf3ff)
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #3867f4
+}
+
+.services-hero h1 {
+    margin: 12px 0;
+    font-size: clamp(36px, 5vw, 52px);
+    letter-spacing: -1.5px
+}
+
+.hero-text {
+    font-size: 16px;
+    color: #748096
+}
+
+.services-container {
+    padding: 65px 8%;
+    background: #fff
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px
+}
+
+.service-card {
+    padding: 30px 26px;
+    border: 1px solid #e6ebf5;
+    border-radius: 16px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 265px;
+    transition: transform .2s, box-shadow .2s
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px #17203312
+}
+
+.service-icon {
+    display: grid;
+    place-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    background: #edf2ff;
+    font-size: 25px
+}
+
+.service-card h2 {
+    margin: 20px 0 10px;
+    font-size: 19px
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #748096;
+    flex: 1
+}
+
+.service-card>a {
+    margin-top: 20px;
+    color: #3867f4;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.service-card>a span {
+    margin-left: 5px
+}
+
+.services-cta {
+    margin: 10px 8% 70px;
+    padding: 50px 25px;
+    text-align: center;
+    background: #172b59;
+    border-radius: 18px;
+    color: #fff
+}
+
+.services-cta h2 {
+    font-size: clamp(25px, 3vw, 34px)
+}
+
+.services-cta p {
+    margin: 12px 0 25px;
+    color: #d4def5;
+    font-size: 15px
+}
+
+@media(max-width:900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .services-container {
+        padding: 50px 6%
+    }
+}
+
+@media(max-width:600px) {
+    .services-grid {
+        grid-template-columns: 1fr
+    }
+
+    .services-hero {
+        padding: 50px 6%
+    }
+
+    .services-container {
+        padding: 40px 5%
+    }
+
+    .service-card {
+        min-height: 230px
+    }
+
+    .services-cta {
+        margin: 10px 5% 45px;
+        padding: 40px 20px
+    }
+}

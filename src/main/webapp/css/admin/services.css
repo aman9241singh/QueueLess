@@ -1,0 +1,329 @@
+.service-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 22px
+}
+
+.service-stat,
+.service-form-panel,
+.services-panel {
+    background: #fff;
+    border: 1px solid #e8edf4;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px #0f172a06
+}
+
+.service-stat {
+    padding: 20px
+}
+
+.service-stat span {
+    font-size: 12px;
+    color: #64748b
+}
+
+.service-stat h2 {
+    font-size: 28px;
+    color: #17243a;
+    margin-top: 10px
+}
+
+.service-form-panel,
+.services-panel {
+    padding: 23px;
+    margin-bottom: 22px;
+    min-width: 0
+}
+
+.service-panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px
+}
+
+.service-panel-heading h2 {
+    font-size: 17px;
+    color: #17243a
+}
+
+.service-panel-heading p {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 5px
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.service-toolbar input,
+.service-toolbar select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+    background: #fff;
+    color: #334155;
+    font: inherit;
+    font-size: 13px;
+    outline: none
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.service-toolbar input:focus,
+.service-toolbar select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px #3b82f61a
+}
+
+.form-group textarea {
+    resize: vertical
+}
+
+.full-width {
+    grid-column: 1/-1
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px
+}
+
+.primary-btn,
+.secondary-btn,
+.action-btn {
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: #fff
+}
+
+.primary-btn:hover {
+    background: #1d4ed8
+}
+
+.secondary-btn {
+    background: #eef2f7;
+    color: #475569
+}
+
+.secondary-btn:hover {
+    background: #e2e8f0
+}
+
+.service-count {
+    padding: 8px 11px;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.service-toolbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px
+}
+
+.service-toolbar input {
+    max-width: 360px
+}
+
+.service-toolbar select {
+    max-width: 170px
+}
+
+.services-panel table {
+    min-width: 720px
+}
+
+.services-panel th {
+    padding: 13px 12px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 10px
+}
+
+.services-panel td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #edf1f5;
+    color: #475569;
+    font-size: 12px;
+    vertical-align: middle
+}
+
+.services-panel tbody tr:last-child td {
+    border-bottom: none
+}
+
+.service-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.service-symbol {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 17px
+}
+
+.service-name-cell strong {
+    display: block;
+    color: #334155;
+    font-size: 12px
+}
+
+.service-name-cell small {
+    display: block;
+    color: #94a3b8;
+    font-size: 10px;
+    margin-top: 4px;
+    max-width: 180px;
+    white-space: normal
+}
+
+.service-status {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.service-status.active {
+    background: #dcfce7;
+    color: #15803d
+}
+
+.service-status.inactive {
+    background: #f1f5f9;
+    color: #64748b
+}
+
+.action-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px
+}
+
+.action-btn {
+    padding: 7px 9px;
+    background: #eff6ff;
+    color: #2563eb
+}
+
+.action-btn:hover {
+    background: #dbeafe
+}
+
+.action-btn.toggle {
+    background: #f1f5f9;
+    color: #475569
+}
+
+.action-btn.delete {
+    background: #fef2f2;
+    color: #dc2626
+}
+
+.action-btn.delete:hover {
+    background: #fee2e2
+}
+
+.empty-state {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    font-size: 13px
+}
+
+@media(max-width:900px) {
+    .service-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+
+    .service-form-panel,
+    .services-panel {
+        padding: 17px
+    }
+}
+
+@media(max-width:600px) {
+    .service-stats {
+        grid-template-columns: 1fr
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr
+    }
+
+    .full-width {
+        grid-column: auto
+    }
+
+    .service-toolbar {
+        flex-direction: column
+    }
+
+    .service-toolbar input,
+    .service-toolbar select {
+        max-width: none
+    }
+
+    .service-panel-heading {
+        align-items: flex-start
+    }
+
+    .service-panel-heading h2 {
+        font-size: 15px
+    }
+
+    .service-form-panel,
+    .services-panel {
+        padding: 14px
+    }
+
+    .form-actions {
+        flex-wrap: wrap
+    }
+}

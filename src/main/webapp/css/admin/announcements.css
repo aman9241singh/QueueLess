@@ -1,0 +1,372 @@
+.announcement-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 23px
+}
+
+.announcement-stat,
+.announcement-editor,
+.announcements-panel {
+    background: #fff;
+    border: 1px solid #e8edf4;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px #0f172a06
+}
+
+.announcement-stat {
+    padding: 20px
+}
+
+.announcement-stat span {
+    font-size: 12px;
+    color: #64748b
+}
+
+.announcement-stat h2 {
+    font-size: 28px;
+    color: #17243a;
+    margin-top: 12px
+}
+
+.announcement-stat:nth-child(2) h2 {
+    color: #16a34a
+}
+
+.announcement-stat:nth-child(3) h2 {
+    color: #d97706
+}
+
+.announcement-stat:nth-child(4) h2 {
+    color: #7c3aed
+}
+
+.announcement-editor,
+.announcements-panel {
+    padding: 23px;
+    margin-bottom: 22px;
+    min-width: 0
+}
+
+.editor-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px
+}
+
+.editor-heading h2 {
+    font-size: 17px;
+    color: #17243a
+}
+
+.editor-heading p {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 5px
+}
+
+.editor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea,
+.announcement-toolbar input,
+.announcement-toolbar select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dbe3ee;
+    border-radius: 8px;
+    background: #fff;
+    color: #334155;
+    font: inherit;
+    font-size: 13px;
+    outline: none
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.announcement-toolbar input:focus,
+.announcement-toolbar select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px #3b82f61a
+}
+
+.form-group textarea {
+    resize: vertical
+}
+
+.form-group small {
+    text-align: right;
+    color: #94a3b8;
+    font-size: 10px
+}
+
+.editor-full {
+    grid-column: 1/-1
+}
+
+.editor-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px
+}
+
+.primary-btn,
+.secondary-btn {
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: #fff
+}
+
+.primary-btn:hover {
+    background: #1d4ed8
+}
+
+.secondary-btn {
+    background: #eef2f7;
+    color: #475569
+}
+
+.secondary-btn:hover {
+    background: #e2e8f0
+}
+
+.announcement-count {
+    padding: 8px 11px;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.announcement-toolbar {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) 190px;
+    gap: 12px;
+    margin-bottom: 18px
+}
+
+.announcement-toolbar input,
+.announcement-toolbar select {
+    min-width: 0
+}
+
+.announcement-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px
+}
+
+.announcement-card {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    border: 1px solid #e8edf4;
+    border-radius: 12px;
+    background: #fff;
+    min-width: 0
+}
+
+.announcement-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px
+}
+
+.announcement-category {
+    display: inline-block;
+    padding: 6px 9px;
+    border-radius: 7px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.announcement-status {
+    display: inline-block;
+    padding: 6px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.announcement-status.published {
+    background: #dcfce7;
+    color: #15803d
+}
+
+.announcement-status.draft {
+    background: #fef3c7;
+    color: #92400e
+}
+
+.announcement-status.archived {
+    background: #f1f5f9;
+    color: #64748b
+}
+
+.announcement-card h3 {
+    font-size: 15px;
+    color: #17243a;
+    line-height: 1.5;
+    margin: 14px 0 8px;
+    overflow-wrap: anywhere
+}
+
+.announcement-message {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #64748b;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    flex: 1
+}
+
+.announcement-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 13px 0;
+    border-top: 1px solid #edf1f5;
+    margin-top: 15px;
+    color: #94a3b8;
+    font-size: 10px
+}
+
+.announcement-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px
+}
+
+.announcement-action {
+    border: 0;
+    border-radius: 7px;
+    padding: 8px 10px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.announcement-action:hover {
+    background: #dbeafe
+}
+
+.announcement-action.archive {
+    background: #f1f5f9;
+    color: #475569
+}
+
+.announcement-action.delete {
+    background: #fef2f2;
+    color: #dc2626
+}
+
+.announcement-action.delete:hover {
+    background: #fee2e2
+}
+
+.empty-announcements {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    font-size: 13px
+}
+
+.announcement-note {
+    font-size: 11px;
+    color: #64748b;
+    line-height: 1.6;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    padding: 13px 15px;
+    margin-bottom: 12px
+}
+
+@media(max-width:1100px) {
+    .announcement-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .announcement-list {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:760px) {
+
+    .announcement-editor,
+    .announcements-panel {
+        padding: 16px
+    }
+
+    .announcement-stat {
+        padding: 15px
+    }
+}
+
+@media(max-width:500px) {
+    .announcement-stats {
+        grid-template-columns: 1fr
+    }
+
+    .editor-grid {
+        grid-template-columns: 1fr
+    }
+
+    .editor-full {
+        grid-column: auto
+    }
+
+    .announcement-toolbar {
+        grid-template-columns: 1fr
+    }
+
+    .editor-heading {
+        align-items: flex-start
+    }
+
+    .editor-heading h2 {
+        font-size: 15px
+    }
+
+    .announcement-card {
+        padding: 14px
+    }
+}

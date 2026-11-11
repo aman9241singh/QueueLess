@@ -1,0 +1,428 @@
+.profile-main {
+    margin-left: 260px;
+    padding: 36px;
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #172033
+}
+
+.admin-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    overflow-y: auto
+}
+
+.admin-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 22px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit
+}
+
+.admin-brand img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain
+}
+
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px
+}
+
+.admin-nav a,
+.back-link {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px
+}
+
+.admin-nav a:hover,
+.admin-nav a.active {
+    background: #e9edff;
+    color: #435be8
+}
+
+.back-link {
+    margin: 15px 12px;
+    color: #69758a
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px
+}
+
+.page-header h1 {
+    font-size: 30px;
+    margin: 5px 0 8px
+}
+
+.page-header p {
+    color: #748094;
+    margin: 0
+}
+
+.eyebrow {
+    font-size: 12px !important;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #4263eb !important
+}
+
+.top-avatar {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    background: #e0e7ff;
+    color: #3730a3;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 20px
+}
+
+.profile-hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(120deg, #394fda, #6679f4);
+    padding: 27px;
+    border-radius: 16px;
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px #435be822
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border: 3px solid #ffffff8c;
+    border-radius: 50%;
+    background: #ffffff30;
+    display: grid;
+    place-items: center;
+    font-size: 32px;
+    font-weight: 700
+}
+
+.profile-identity {
+    flex: 1;
+    min-width: 0
+}
+
+.profile-identity h2 {
+    font-size: 23px;
+    margin: 0 0 7px;
+    overflow-wrap: anywhere
+}
+
+.profile-identity p {
+    margin: 0 0 12px;
+    color: #eef0ff;
+    overflow-wrap: anywhere
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 5px 11px;
+    border-radius: 20px;
+    background: #ffffff28;
+    font-size: 12px
+}
+
+.account-status {
+    font-size: 13px;
+    white-space: nowrap
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #69edb0;
+    border-radius: 50%;
+    margin-right: 7px
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start
+}
+
+.profile-card {
+    background: #fff;
+    border: 1px solid #e7eaf0;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 16px #14234609
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 23px
+}
+
+.card-heading h2 {
+    font-size: 19px;
+    margin: 0 0 6px
+}
+
+.card-heading p {
+    font-size: 13px;
+    color: #8490a3;
+    margin: 0
+}
+
+.card-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: #eef2ff;
+    color: #435be8;
+    border-radius: 12px;
+    font-size: 23px
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px
+}
+
+.field-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #414b5e
+}
+
+.field-group input,
+.field-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    border: 1px solid #dce1e9;
+    border-radius: 8px;
+    background: #fff;
+    color: #263248;
+    font: inherit;
+    font-size: 14px;
+    outline: none
+}
+
+.field-group textarea {
+    resize: vertical
+}
+
+.field-group input:focus,
+.field-group textarea:focus {
+    border-color: #536dfe;
+    box-shadow: 0 0 0 3px #536dfe1f
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 5px
+}
+
+.primary-button,
+.secondary-button {
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 17px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px
+}
+
+.primary-button {
+    background: #4f63e8;
+    color: #fff
+}
+
+.primary-button:hover {
+    background: #394ed0
+}
+
+.secondary-button {
+    background: #e9edf5;
+    color: #39465b
+}
+
+.secondary-button:hover {
+    background: #dce2ee
+}
+
+.full-button {
+    width: 100%
+}
+
+.password-hint {
+    font-size: 12px;
+    color: #8490a3;
+    margin: -5px 0 18px
+}
+
+.security-note {
+    background: #f0f4ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 22px
+}
+
+.security-note strong {
+    font-size: 13px;
+    color: #394ed0
+}
+
+.security-note p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #69758a;
+    margin: 6px 0 0
+}
+
+.account-card {
+    grid-column: 1/-1
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border-top: 1px solid #edf0f5;
+    font-size: 14px
+}
+
+.info-row span {
+    color: #748094
+}
+
+.info-row strong {
+    text-align: right;
+    overflow-wrap: anywhere
+}
+
+.active-text {
+    color: #138b59
+}
+
+.toast {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background: #172033;
+    color: white;
+    box-shadow: 0 8px 25px #0002;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: .25s;
+    z-index: 10
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+@media(max-width:1050px) {
+    .profile-main {
+        margin-left: 220px;
+        padding: 25px
+    }
+
+    .admin-sidebar {
+        width: 220px
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr
+    }
+
+    .account-card {
+        grid-column: auto
+    }
+}
+
+@media(max-width:650px) {
+    .admin-sidebar {
+        position: relative;
+        width: 100%;
+        bottom: auto
+    }
+
+    .admin-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+
+    .profile-main {
+        margin-left: 0;
+        padding: 18px
+    }
+
+    .page-header h1 {
+        font-size: 25px
+    }
+
+    .profile-hero {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px
+    }
+
+    .profile-avatar {
+        width: 62px;
+        height: 62px;
+        font-size: 26px
+    }
+
+    .profile-identity h2 {
+        font-size: 20px
+    }
+
+    .account-status {
+        width: 100%
+    }
+
+    .profile-card {
+        padding: 19px
+    }
+
+    .info-row {
+        font-size: 13px
+    }
+
+    .button-row button {
+        flex: 1
+    }
+}
