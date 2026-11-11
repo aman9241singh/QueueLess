@@ -31,10 +31,13 @@ public class BookingServlet extends HttpServlet {
             int serviceId = Integer.parseInt(request.getParameter("serviceId"));
             String dateValue = request.getParameter("date");
             String timeValue = request.getParameter("time");
-            if (dateValue == null || timeValue == null || dateValue.isBlank() || timeValue.isBlank()) {
-                response.sendRedirect(request.getContextPath() + "/booking?error=invalid");
-                return;
-            }
+           
+if (dateValue == null || timeValue == null ||
+        dateValue.trim().isEmpty() || timeValue.trim().isEmpty()) {
+    response.sendRedirect(request.getContextPath() + "/booking?error=invalid");
+    return;
+}
+
             LocalDate visitDate = LocalDate.parse(dateValue);
             LocalTime preferredTime = LocalTime.parse(timeValue);
             if (visitDate.isBefore(LocalDate.now()) || preferredTime.isBefore(LocalTime.of(9, 0)) || preferredTime.isAfter(LocalTime.of(17, 0))) {
