@@ -14,9 +14,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 
 RUN sed -i 's/port="8080"/port="10000"/' \
     /usr/local/tomcat/conf/server.xml
-
-COPY --from=build /app/target/queueless.war \
-    /usr/local/tomcat/webapps/queueless.war
+COPY --from=build /app/target/QueueLess1-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/queueless.war
 
 EXPOSE 10000
 
