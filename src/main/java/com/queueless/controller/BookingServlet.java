@@ -32,11 +32,14 @@ public class BookingServlet extends HttpServlet {
             String dateValue = request.getParameter("date");
             String timeValue = request.getParameter("time");
            
+
 if (dateValue == null || timeValue == null ||
-        dateValue.trim().isEmpty() || timeValue.trim().isEmpty()) {
+    dateValue.trim().isEmpty() || timeValue.trim().isEmpty()) {
+
     response.sendRedirect(request.getContextPath() + "/booking?error=invalid");
     return;
 }
+
 
             LocalDate visitDate = LocalDate.parse(dateValue);
             LocalTime preferredTime = LocalTime.parse(timeValue);
